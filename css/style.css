@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.my-container{
+    width: 1349px;
+    margin: auto;
+}
+/*START-header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    padding: 0 16px;
+}
+header .left-section{
+    display: flex;
+    align-items: center;
+}
+header .left-section i , img{
+    cursor: pointer;
+}
+header .left-section img{
+    width: 50%;
+    padding-left: 15px;
+}
+header .center{
+    display: flex;
+    align-items: center;
+}
+header .center form{
+    display: flex;
+    height: 42px;
+    width: 628px;
+}
+header .center form input{
+    width: 100%;
+    border-radius: 21px 0 0 21px;
+    padding: 10px;
+    font-size: 1.6rem;
+    border: 1px solid #d3d3d3;
+}
+header .center form button{
+    width: 65px;
+    border: 1px solid #d3d3d3;
+    border-radius: 0 21px 21px 0;
+    background-color: #f7f7f7;
+    cursor: pointer;
+    padding-top: 2px;
+}
+header .center form button:hover{
+    background-color:#f1f1f1 ;
+}
+header .center .mic{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 10px;
+}
+header .right-section a{
+    margin-right:16px ;
+    text-decoration: none;
+    color: #000000;
+}
+/*END-header*/
+/*start-content-area*/
+/*start-aside*/
+.content-area{
+    height: calc( 100vh - 55px );
+    background-color: #f8f8f8;
+    display: flex;
+}
+.content-area aside{
+    height: calc(643px - 55px);
+    width: 280px;
+    background-color: #ffffff;
+    overflow-y:scroll;
+}
+.content-area aside nav{
+    width: 100%;
+    flex-direction: column;
+    padding-left: 15px;
+}
+
+.content-area aside nav .nav-link{
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #000000;
+}
+.content-area aside nav .nav-link:hover{
+    background-color:rgb(0,0,0,0.05) ;
+    border-radius: 10px;
+}
+.content-area aside nav .nav-link span{
+    margin-left: 25px;
+    font-size: 1.6rem;
+    line-height: 2em;
+    color: #000000;
+    font-weight: 400;
+}
+.content-area aside nav .active{
+   background-color: #efefef;
+   border-radius: 10px;
+}
+.content-area aside hr{
+    margin: 20px 0;
+    height: 1px;
+    background-color: #e5e5e5;
+    border: none;
+ }
+ .content-area aside nav img{
+    width: 40px;
+    border-radius: 50%;
+ }
+
+/*END-aside*/
+/*START-Main-content*/
+.content-area .main-content{
+    height: calc(643px - 55px);
+    width: calc(1349px - 280px);
+    display: flex;
+    flex-wrap: wrap;
+}
+.content-area .main-content .chanel-section{
+    width: 253px;
+    height: 280px;
+    margin: 7px;
+    background-color: #ffffff;
+    border-radius: 10px;
+ }
+ .content-area .main-content .chanel-section .header-chanel img{
+    width: 253px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+ }
+ .content-area .main-content .chanel-section .chanel-body{
+    display: flex;
+ }
+ .content-area .main-content .chanel-section .chanel-body img{
+    width: 40px;
+    border-radius: 50%;
+ }
+ .content-area .main-content .chanel-section .chanel-body .right{
+    padding-left: 10px;
+ }
+ .content-area .main-content .chanel-section .chanel-body .right h3{
+    font-size: 18px;
+    color: #000000; 
+    margin-top: 8px;
+    font-weight: 400;
+ }
+ .content-area .main-content .chanel-section .chanel-body .right p,li{
+    font-size: 12px;
+    color: #808080; 
+ }
+ .content-area .main-content .chanel-section .chanel-body .right li{
+    margin-left: 20px;
+ }
+ /*ENDt-Main-content*/
+ /*END-content-area*/
