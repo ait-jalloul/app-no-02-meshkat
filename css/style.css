@@ -11,7 +11,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 .my-container{
-    width: 1349px;
+    width: 100%;
     margin: auto;
 }
 /*START-header*/
@@ -81,12 +81,13 @@ header .right-section a{
 /*start-aside*/
 .content-area{
     height: calc( 100vh - 55px );
-    background-color: #f8f8f8;
+    width: 100%;
+
     display: flex;
 }
 .content-area aside{
-    height: calc(643px - 55px);
-    width: 280px;
+    height: calc(100vh - 55px);
+    width: 18%;
     background-color: #ffffff;
     overflow-y:scroll;
 }
@@ -99,7 +100,7 @@ header .right-section a{
 .content-area aside nav .nav-link{
     display: flex;
     align-items: center;
-    padding: 10px 15px;
+    padding: 5px 10x;
     text-decoration: none;
     color: #000000;
 }
@@ -107,9 +108,12 @@ header .right-section a{
     background-color:rgb(0,0,0,0.05) ;
     border-radius: 10px;
 }
+.content-area aside nav .nav-link i{
+   font-size: 2rem;
+}
 .content-area aside nav .nav-link span{
     margin-left: 25px;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     line-height: 2em;
     color: #000000;
     font-weight: 400;
@@ -125,12 +129,64 @@ header .right-section a{
     border: none;
  }
  .content-area aside nav img{
-    width: 40px;
+    width: 20px;
     border-radius: 50%;
  }
 
+
+ 
+
+.content-area .videos{
+    width:98%;
+    overflow: scroll;
+}
+.content-area .row{
+   
+}
+.content-area .card{
+   background-color: transparent;
+   border: none;
+}
+.content-area .card-img-top , .card-img-top{
+    border-radius: 5px;
+ }
+.content-area .videos .card-body{
+    display: flex;
+}
+.content-area .videos .profile-image img{
+    width: 40px;
+    border-radius: 50%;
+}
+.content-area .videos .right{
+    padding-left: 10px;
+}
+.content-area .videos .right h5{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.content-area .videos .right p{
+    font-size: 1.2rem;
+    padding-right: 5px;
+    line-height: 15px;
+}
+
+
+.horizontal-line{
+    width: 96%;
+    height: 4px;
+    background-color:#d3d3d3;
+    margin: 40px auto 44px;
+    border-radius: 4px;
+}
+
+
+
+
+
 /*END-aside*/
-/*START-Main-content*/
+/*START-Main-content
 .content-area .main-content{
     height: calc(643px - 55px);
     width: calc(1349px - 280px);
@@ -172,5 +228,5 @@ header .right-section a{
  .content-area .main-content .chanel-section .chanel-body .right li{
     margin-left: 20px;
  }
- /*ENDt-Main-content*/
+ ENDt-Main-content*/
  /*END-content-area*/
